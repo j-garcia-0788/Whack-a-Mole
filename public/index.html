@@ -9,8 +9,9 @@
 		body { 
 			background-image: url('trex.jpg');
 			background-color: black;
-			background-size: 100%;
+			background-size: cover;
 			background-repeat: no-repeat;
+			@media only screen and (max-width: 320px)
 		}
 		.top {
 			margin: auto;
@@ -133,7 +134,7 @@
 
 			$("#start").click(function() {
 				
-				$(".logo").(click(function(click) {
+				$(".logo").click(function(click) {
 				     $(this).children().fadeToggle();
 				         score++
 				         $('#score').html(score);
